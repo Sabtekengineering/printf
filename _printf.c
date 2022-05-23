@@ -8,10 +8,10 @@
 int _printf(const char *format, ...)
 {
 	va_list arguments;
-	va_start(arguments, format);
 	int size = 0;
 	char *p;
 
+	va_start(arguments, format);
 	for (p = (char *)format; *p; p++)
 	{
 		if (*p != '%')

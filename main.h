@@ -11,7 +11,8 @@
  * @key: Character key of the function.
  * @func: Function pointer to appropiate function.
  */
-struct _specifier {
+struct _specifier
+{
 	char key;
 	int (*func)();
 };
