@@ -27,6 +27,7 @@ int print_char(va_list);
 int print_string(va_list);
 int print_digits(va_list);
 int print_binary(va_list);
+int print_percent(va_list __attribute__((unused)));
 
 /* Wrapper Functions */
 int find_print_func(char, va_list);

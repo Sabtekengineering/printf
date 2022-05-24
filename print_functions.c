@@ -9,6 +9,8 @@ int print_char(va_list args)
 {
 	char c = va_arg(args, int);
 
+	if (!c)
+		return (0);
 	return (_putchar(c));
 }
 
@@ -29,6 +31,16 @@ int print_string(va_list args)
 		s++;
 	}
 	return (i);
+}
+
+/**
+ * print_percent - prints a character '%'.
+ * @args: Varable Argument list (will not be called).
+ * Return: Number of bytes printed.
+ */
+int print_percent(va_list args __attribute__((unused)))
+{
+	return (_putchar('%'));
 }
 
 /**

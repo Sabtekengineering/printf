@@ -12,6 +12,7 @@ int find_print_func(char k, va_list args)
 	SPECIFIER print_funcs[] = {
 		{'c', print_char},
 		{'s', print_string},
+		{'%', print_percent},
 		{'d', print_digits},
 		{'i', print_digits},
 		{'b', print_binary}
