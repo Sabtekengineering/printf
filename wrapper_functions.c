@@ -18,9 +18,9 @@ int find_print_func(char k, va_list args)
 	};
 	while (&(print_funcs[j]) <= &print_funcs[4])
 	{
-		if (k == (*print_funcs).key)
+		if (k == print_funcs[j].key)
 		{
-			i = (*print_funcs).func(args);
+			i = print_funcs[j].func(args);
 			break;
 		}
 		j++;
